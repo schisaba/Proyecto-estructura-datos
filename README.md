@@ -73,6 +73,6 @@ Al iniciar la aplicación, navega ingresando el número del módulo correspondie
 
 * **Cola con Prioridad Dinámica (`ColaPrioridadCasos`):** Ordena los expedientes activos según su urgencia (`1: Alta`, `2: Media`, `3: Baja`) respetando el orden de llegada (FIFO) en caso de empate.
 * **Pila Dinámica (`PilaEvidencias`):** Almacena bajo política LIFO (*Last In, First Out*) las pistas descubiertas dentro de cada caso.
-* **Cola Circular Estática (`ColaCircularCoartadas`):** Rota perpetuamente un catálogo fijo de 10 coartadas en tiempo constante $O(1)$ mediante aritmética modular.
+* **Cola Circular Estática (`ColaCircularCoartadas`):** Rota perpetuamente un catálogo fijo de 10 coartadas en tiempo constante $O(1)$.
 * **Arreglos Dinámicos Paralelos:** Gestionan en el *Heap* los nombres, disponibilidad y estadísticas de los detectives.
 * **Registros (`struct`) y Arreglos Estáticos:** Modelan el catálogo global de 15 sospechosos y el subconjunto aleatorio de 5 sospechosos únicos por caso.

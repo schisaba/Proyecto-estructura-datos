@@ -12,6 +12,11 @@ Simulador interactivo de consola en **C++** para la administración de una centr
 5. [Arquitectura de Estructuras de Datos](#-arquitectura-de-estructuras-de-datos)
 
 ---
+##  Autores
+
+- **Sebastián Chisaba Cruz**
+- **Ariadna Valentina Ramírez Santeliz**
+- **Jerónimo Pascuas Barroso**
 
 ## Estructura del Menú Principal
 
@@ -71,8 +76,13 @@ Al iniciar la aplicación, navega ingresando el número del módulo correspondie
 
 ##  Arquitectura de Estructuras de Datos
 
-* **Cola con Prioridad Dinámica (`ColaPrioridadCasos`):** Ordena los expedientes activos según su urgencia (`1: Alta`, `2: Media`, `3: Baja`) respetando el orden de llegada (FIFO) en caso de empate.
-* **Pila Dinámica (`PilaEvidencias`):** Almacena bajo política LIFO (*Last In, First Out*) las pistas descubiertas dentro de cada caso.
-* **Cola Circular Estática (`ColaCircularCoartadas`):** Rota perpetuamente un catálogo fijo de 10 coartadas en tiempo constante $O(1)$.
-* **Arreglos Dinámicos Paralelos:** Gestionan en el *Heap* los nombres, disponibilidad y estadísticas de los detectives.
-* **Registros (`struct`) y Arreglos Estáticos:** Modelan el catálogo global de 15 sospechosos y el subconjunto aleatorio de 5 sospechosos únicos por caso.
+- **Cola con Prioridad Dinámica (`ColaPrioridadCasos` y `NodoCaso`):** Lista enlazada ordenada que ubica los expedientes activos según su nivel de urgencia (`1: Alta`, `2: Media`, `3: Baja`), respetando el orden cronológico de llegada (FIFO) en caso de empate.
+- **Pila Dinámica (`PilaEvidencias` y `NodoPila`):** Estructura enlazada bajo política LIFO (*Last In, First Out*) anidada en cada caso para almacenar las pistas descubiertas, mostrando siempre el hallazgo más reciente en la cima.
+- **Cola Circular Estática (`ColaCircularCoartadas`):** Contenedor FIFO de tamaño fijo que rota perpetuamente un catálogo de 10 coartadas en tiempo constante `O(1)` mediante aritmética modular (`% 10`).
+- **Registros (`struct Sospechoso` y `struct Detective`) y Arreglos Estáticos:** 
+  - `Sospechoso`: Modela el catálogo global (`CatalogoSospechosos[15]`), el subconjunto aleatorio de 5 sospechosos únicos por caso (`sospechosos[5]`) y sus 4 rasgos (`rasgos[4]`).
+  - `Detective`: Agrupa el nombre, disponibilidad booleana y casos resueltos de la plantilla fija de 4 agentes de la central (`detectives[4]`).
+
+---
+
+> **Nota de transparencia académica:** Se empleó un **45% de asistencia de Inteligencia Artificial** como apoyo en la estructuración de la documentación en línea (estándar Doxygen), maquetación de manuales y refactorización/pulido de clases.

@@ -2,7 +2,6 @@
 
 Simulador interactivo de consola en **C++** para la administración de una central de detectives, procesamiento de escenas del crimen, interrogatorio de sospechosos y resolución de expedientes criminales en tiempo real mediante estructuras de datos dinámicas y estáticas.
 
-[![Video Title](https://img.youtube.com/vi/xL8Io0tsWPU/0.jpg)](https://www.youtube.com/watch?v=xL8Io0tsWPU)
 
 ---
 

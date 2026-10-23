@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Central Policial - Estructuras de Datos C++</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1> CENTRAL DE INTELIGENCIA POLICIAL</h1>
+            <p>Motor en Tiempo Real C++ | Cola con Prioridad • Pila LIFO • Cola Circular • Registros</p>
+        </div>
+        <div class="reloj-box">
+            <span>Próxima alerta automática en: <strong id="timer">60</strong>s</span>
+            <button onclick="dispararAlerta()" class="btn-alerta"> Simular Alerta Ahora</button>
+        </div>
+    </header>
+
+    <div id="banner-mensaje" class="banner">Conectando con el servidor C++ en localhost:8080...</div>
+
+    <main class="grid-container">
+        <!-- COLUMNA IZQUIERDA: COLA CON PRIORIDAD Y DETECTIVES -->
+        <section class="panel">
+            <h2> Cola con Prioridad de Casos</h2>
+            <p class="sub">Ordenados por urgencia (1: Alta, 2: Media, 3: Baja)</p>
+            <div id="lista-casos" class="contenedor-items"></div>
+
+            <h2 style="margin-top: 24px;"> Plantilla de Detectives (Struct)</h2>
+            <p class="sub">Haz clic en un agente disponible para asignarlo al caso urgente</p>
+            <div id="lista-detectives" class="grid-detectives"></div>
+        </section>
+
+        <!-- COLUMNA CENTRAL: SALA DE EVIDENCIAS (PILA LIFO) -->
+        <section class="panel">
+            <h2> Sala de Evidencias (Pila LIFO)</h2>
+            <p class="sub">La última pista recolectada se apila en la cima (Tope)</p>
+            <button onclick="solicitarEvidencia()" class="btn-primario"> Procesar Nueva Evidencia de la Escena</button>
+            <div id="pila-evidencias" class="pila-box"></div>
+        </section>
+
+        <!-- COLUMNA DERECHA: SOSPECHOSOS Y COARTADAS (COLA CIRCULAR) -->
+        <section class="panel">
+            <h2> Perfiles e Interrogatorio</h2>
+            <p class="sub">Coartadas asignadas mediante Cola Circular (O(1))</p>
+            <div id="lista-sospechosos" class="contenedor-sospechosos"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

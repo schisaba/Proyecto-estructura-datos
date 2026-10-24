@@ -36,8 +36,8 @@ Para ejecutar el proyecto necesitas un compilador de C++ (`g++`) en un entorno L
 
 ```bash
 # 1. Clonar el repositorio y entrar a la carpeta
-git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-cd tu-repositorio
+git clone [https://github.com/schisaba/Proyecto-estructura-datos](https://github.com/schisaba/Proyecto-estructura-datos)
+cd Proyecto-estructura-datos
 
 # 2. Compilar el servidor C++ (incluye automáticamente Estructuras.h)
 g++ servidor.cpp -o servidor

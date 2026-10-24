@@ -1,8 +1,5 @@
 #  Sistema Policial de Gestión de Casos (Motor C++ & Interfaz Web)
 
-![C++](https://img.shields.io/badge/Motor_Backend-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![HTML5](https://img.shields.io/badge/Interfaz_Gr%C3%A1fica-HTML5_%2F_CSS3_%2F_JS-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Estructuras de Datos](https://img.shields.io/badge/Estructuras-Cola_Prioridad_%7C_Pila_%7C_Cola_Circular_%7C_Struct-success?style=for-the-badge)
 
 Sistema interactivo de administración de una central de inteligencia policial. El núcleo lógico y todas las estructuras de datos (**Cola con Prioridad, Pila, Cola Circular y Registros**) se ejecutan de forma nativa en **C++** a través de un servidor local que se comunica en tiempo real con una **Interfaz Gráfica Web**.
 
